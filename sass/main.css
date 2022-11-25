@@ -85,4 +85,9 @@ img {
 
 .services--cards img:hover {
   opacity: 0.5;
-}/*# sourceMappingURL=main.css.map */
+}
+
+.siteMap{
+  display: flex;
+}
+/*# sourceMappingURL=main.css.map */
