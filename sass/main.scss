@@ -1,4 +1,4 @@
-.title-service, .title-logIn, .title-signIn{
+.title-service, .title-logIn, .title-signIn, .contact{
     padding-top: 3em;
     font-weight: 400;
     display: flex;
@@ -59,16 +59,6 @@ img {
     justify-content: end;
     align-items: center;
     padding: 20px;
-}
-
-
-
-.btn{
-    background-color: var(--blue-hover);
-    color: white;
-    padding: 5px;
-    border-radius: 5px;
-    cursor: pointer;
 }
 
 .services--cards {
