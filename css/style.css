@@ -102,6 +102,9 @@ nav .fa-solid {
     font-weight: 800;
 }
 
+.navigation-menu .js-nav-menu{
+    display: none;
+}
 
 .logIn-btn {
     z-index: 1;
@@ -512,8 +515,17 @@ main {
     }
 }
 
+
+/* NavBar Variables 
+$body-color: #fff;
+$menu-background-color: #4E567E;
+$menu-icons-color: #fff;
+$font-stack: 'Lato', sans-serif;
+*/
+
 @media (max-width: 760px) {
 
+   
     nav {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
@@ -579,6 +591,10 @@ main {
 
     .card-img-top{
         max-width:40vh;
+    }
+
+    .navigation-menu .js-nav-menu{
+        display: flex;
     }
 }
 
@@ -665,4 +681,25 @@ main {
     display: flex;
     flex-direction: column;
     line-height: 1.5vh;
+}
+
+#sidebar, .sidebar{
+    display: none;
+}
+
+.sidebar{
+    background-color: var(--black);
+    width: 50vw;
+    height: 100%;
+    z-index: 2;
+    position: absolute;
+    color: white;
+    opacity: 0.9;
+}
+
+.fa-x{
+    font-size: 0.9em;
+    position: relative;
+    left: 45vw;
+    top: 0.5em;
 }
