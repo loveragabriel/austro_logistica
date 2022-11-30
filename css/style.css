@@ -9,8 +9,14 @@
 :root {
     --blue: #002E94;
     --black: #0e0e0e;
-    --orange: #cb6e35;
+    --orange: #E79336;
     --blue-hover: #aab0e0;
+    --surfieGreen: #106D86; 
+    --bleachedCedar: #221623;
+    --azulOscuro: #090f29;
+    --azulGris: #0F1A32;
+    --comoris: #64728b;
+
 }
 
 /* General Styles */
@@ -37,7 +43,7 @@ a {
     position: relative;
     display: inline-block;
     text-decoration: none;
-
+    color: var(--azulGris);
 }
 
 a::before,
@@ -109,7 +115,7 @@ nav .fa-solid {
 .logIn-btn {
     z-index: 1;
     appearance: none;
-    background-color: #ffffff80;
+    background-color: var(--surfieGreen);
     border-radius: 5px;
     border-style: none;
     /* box-shadow: #ADCFFF 0 -12px 6px inset; */
@@ -136,6 +142,7 @@ nav .fa-solid {
     background-color:var(--blue-hover);
     box-shadow: var(--blue-hover) 0 -6px 8px inset;
     transform: scale(1);
+    color: var(--orange);
 }
 
 .logIn-btn {
@@ -513,15 +520,14 @@ main {
         width: 60vw;
         margin: 2em;
     }
+
+    #sidebar{
+        display: none;
+    }
 }
 
 
-/* NavBar Variables 
-$body-color: #fff;
-$menu-background-color: #4E567E;
-$menu-icons-color: #fff;
-$font-stack: 'Lato', sans-serif;
-*/
+/* MediaQueries */
 
 @media (max-width: 760px) {
 
@@ -595,6 +601,10 @@ $font-stack: 'Lato', sans-serif;
 
     .navigation-menu .js-nav-menu{
         display: flex;
+    }
+
+    #sidebar{
+        display: none;
     }
 }
 
@@ -683,11 +693,10 @@ $font-stack: 'Lato', sans-serif;
     line-height: 1.5vh;
 }
 
-#sidebar, .sidebar{
-    display: none;
-}
 
-.sidebar{
+
+#sidebar{
+    display: none;
     background-color: var(--black);
     width: 50vw;
     height: 100%;
