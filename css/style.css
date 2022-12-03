@@ -8,14 +8,17 @@
 
 :root {
     --blue: #002E94;
-    --black: #0e0e0e;
+    --title: #090f29;
+    --white-title: #ffffff; 
+    --info-color: #252429;
+    --links:#0F1A32;
     --orange: #E79336;
-    --blue-hover: #aab0e0;
     --surfieGreen: #106D86; 
     --bleachedCedar: #221623;
-    --azulOscuro: #090f29;
-    --azulGris: #0F1A32;
+    /* --azulOscuro: #090f29; */
+    /* --azulGris: #0F1A32; */
     --comoris: #64728b;
+    --blue-hover: #aab0e0;
 
 }
 
@@ -23,11 +26,11 @@
 /* Nav bar style */
 nav {
     position: absolute;
-    padding: 10px;
     display: grid;
-    grid-template-columns: 1fr 1fr 8%;
+    grid-template-columns: 2fr 1fr 2fr;
     align-items: center;
-    width: 90vw;
+    justify-items: center;
+    width: 100vw;
     font-size: 1.3em;
 }
 
@@ -43,7 +46,7 @@ a {
     position: relative;
     display: inline-block;
     text-decoration: none;
-    color: var(--azulGris);
+    color: var(--links);
 }
 
 a::before,
@@ -132,6 +135,7 @@ nav .fa-solid {
     user-select: none;
     -webkit-user-select: none;
     touch-action: manipulation;
+    padding: 2px;
 }
 
 .logIn-btn a {
@@ -148,6 +152,7 @@ nav .fa-solid {
 .logIn-btn {
     transform: scale(0.9);
 }
+
 
 @media (min-width: 768px) {
     .logIn-btn {
@@ -310,6 +315,9 @@ footer {
 .text-description p {
     margin: 20px;
     line-height: 150%;
+    letter-spacing: 0.5px;
+    word-spacing: 3px;
+
 }
 
 
@@ -320,14 +328,13 @@ footer {
     justify-content: center;
     align-items: center;
     font-size: 250%;
-    color: var(--black);
+    color: var(--title);
 }
 
 
 .about-team-description {
     font-size: 200%;
     padding-left: 25px;
-    font-weight: 550;
 }
 
 .items-description {
@@ -466,26 +473,15 @@ main {
 }
 
 
-@media (max-width: 900px) {
 
-    .services--cards img {
-        display: none;
-    }
 
-    .collapse,
-    .navbar {
-        display: none;
-    }
 
-}
+/* **************** */
+/* Media Queries */
+/* **************** */
 
 @media (max-width: 950px) {
 
-    nav {
-        display: grid;
-        grid-template-columns: 2fr 0.2fr 0.3fr;
-        z-index: 1;
-    }
 
     .card-img-top{
         max-width:50vh;
@@ -516,6 +512,10 @@ main {
         justify-items: center;
     }
 
+    .fa-user{
+        z-index: 1;
+    }
+    
     .card {
         width: 60vw;
         margin: 2em;
@@ -524,10 +524,17 @@ main {
     #sidebar{
         display: none;
     }
+
+    .services--cards img {
+        display: none;
+    }
+
+    .collapse,
+    .navbar {
+        display: none;
+    }
 }
 
-
-/* MediaQueries */
 
 @media (max-width: 760px) {
 
@@ -546,10 +553,12 @@ main {
         justify-content: space-around;
     }
 
-    nav .fa-bars {
+    nav .fa-bars, nav .fa-user {
         display: flex;
+        z-index: 1;
+        justify-items: flex-end;
     }
-
+    
     .logIn-btn {
         padding: 0px
     }
@@ -566,10 +575,7 @@ main {
         display: none;
     }
 
-    nav .fa-user {
-        display: flex;
-        justify-content: flex-end;
-    }
+  
 
     .footer-shape img {
         width: 100vw;
@@ -641,6 +647,7 @@ main {
     nav .fa-user {
         display: flex;
         justify-content: flex-end;
+        z-index: 1;
     }
 
     .imagotype {
@@ -697,7 +704,7 @@ main {
 
 #sidebar{
     display: none;
-    background-color: var(--black);
+    background-color: black;
     width: 50vw;
     height: 100%;
     z-index: 2;
@@ -711,4 +718,9 @@ main {
     position: relative;
     left: 45vw;
     top: 0.5em;
+}
+
+.fa-x:hover{
+    transform: scale(1);
+    color: var(--orange);
 }
