@@ -95,7 +95,7 @@ a:hover span {
     transform: translate3d(0, -200%, 0);
 }
 
-nav .fa-solid {
+nav .fa-solid{
     display: none;
 }
 
@@ -132,14 +132,7 @@ nav .fa-solid {
     touch-action: manipulation;
     padding: 2px;
 }
-/* 
-.btn {
-    background-color: var(--blue-hover);
-    color: white;
-    padding: 5px;
-    border-radius: 5px;
-    cursor: pointer;
-} */
+
 
 .btn a {
     text-decoration: none;
@@ -154,7 +147,6 @@ li {
     margin: 10px;
     list-style: none;
     flex-wrap: wrap;
-
 }
 
 /* About Place */
@@ -183,7 +175,6 @@ video {
     opacity: 0.9;
     z-index: -1;
     background-size: cover;
-
 }
 
 .description p {
@@ -213,7 +204,7 @@ video {
     left: 60vw;
 }
 
-/*
+/* 
 code for use arrow to scrolling down
 .material-symbols-outlined {
   color: blue;
@@ -222,7 +213,7 @@ code for use arrow to scrolling down
   z-index: 3;
   right: 100vh;
   opacity: 0.7; 
-}*/
+} */
 
 /* Footer style */
 footer {
@@ -519,14 +510,9 @@ main {
 
 @media (max-width: 760px) {
 
-
     nav {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-    }
-
-    .navigation-links {
-        display: none;
     }
 
     .imagotype {
@@ -553,7 +539,9 @@ main {
         display: none;
     }
 
-
+    .navigation-links {
+        display: none;
+    }
 
     .footer-shape img {
         width: 100vw;
@@ -609,7 +597,6 @@ main {
     .card-img-top {
         max-width: 20vh;
     }
-
 
     nav {
         display: grid;
