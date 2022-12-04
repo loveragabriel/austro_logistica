@@ -9,17 +9,14 @@
 :root {
     --blue: #002E94;
     --title: #090f29;
-    --white-title: #ffffff; 
+    --white-title: #ffffff;
     --info-color: #252429;
-    --links:#0F1A32;
+    --links: #0F1A32;
     --orange: #E79336;
-    --surfieGreen: #106D86; 
+    --surfieGreen: #106D86;
     --bleachedCedar: #221623;
-    /* --azulOscuro: #090f29; */
-    /* --azulGris: #0F1A32; */
     --comoris: #64728b;
     --blue-hover: #aab0e0;
-
 }
 
 /* General Styles */
@@ -42,6 +39,7 @@ nav {
     font-weight: 800;
 }
 
+/* a link Nav Bar */
 a {
     overflow: hidden;
     position: relative;
@@ -91,7 +89,6 @@ a:hover::after {
 a span {
     display: inline-block;
     transition: transform .3s cubic-bezier(0.76, 0, 0.24, 1);
-
 }
 
 a:hover span {
@@ -112,18 +109,15 @@ nav .fa-solid {
     font-weight: 800;
 }
 
-.navigation-menu .js-nav-menu{
+.navigation-menu .js-nav-menu {
     display: none;
 }
 
-.logIn-btn {
+.btn {
     z-index: 1;
     appearance: none;
-    background-color: var(--surfieGreen);
     border-radius: 5px;
     border-style: none;
-    /* box-shadow: #ADCFFF 0 -12px 6px inset; */
-    box-sizing: border-box;
     color: #000000;
     cursor: pointer;
     display: inline-block;
@@ -138,24 +132,23 @@ nav .fa-solid {
     touch-action: manipulation;
     padding: 2px;
 }
+/* 
+.btn {
+    background-color: var(--blue-hover);
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+} */
 
-.logIn-btn a {
+.btn a {
     text-decoration: none;
 }
 
-.logIn-btn:hover {
-    background-color:var(--blue-hover);
-    box-shadow: var(--blue-hover) 0 -6px 8px inset;
-    transform: scale(1);
-    color: var(--orange);
+.btn-main:hover {
+    box-shadow: 2px 2px; 
+    transform: scale(.9);
 }
-
-.logIn-btn {
-    transform: scale(0.9);
-}
-
-
-
 
 li {
     margin: 10px;
@@ -385,13 +378,7 @@ footer {
 
 /* Service Page style */
 
-.btn{
-    background-color: var(--blue-hover);
-    color: white;
-    padding: 5px;
-    border-radius: 5px;
-    cursor: pointer;
-}
+
 
 
 /* Form section style */
@@ -461,7 +448,7 @@ main {
     display: none;
 }
 
-.form-page{
+.form-page {
     background-color: rgb(202, 214, 218);
 }
 
@@ -477,8 +464,8 @@ main {
 @media (max-width: 950px) {
 
 
-    .card-img-top{
-        max-width:50vh;
+    .card-img-top {
+        max-width: 50vh;
     }
 
     .footer-shape img {
@@ -506,16 +493,16 @@ main {
         justify-items: center;
     }
 
-    .fa-user{
+    .fa-user {
         z-index: 1;
     }
-    
+
     .card {
         width: 60vw;
         margin: 2em;
     }
 
-    #sidebar{
+    #sidebar {
         display: none;
     }
 
@@ -532,7 +519,7 @@ main {
 
 @media (max-width: 760px) {
 
-   
+
     nav {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
@@ -548,14 +535,10 @@ main {
         justify-content: space-around;
     }
 
-    nav .fa-bars, nav .fa-user {
+     nav .fa-bars, nav .fa-user {
         display: flex;
         z-index: 1;
         justify-items: flex-end;
-    }
-    
-    .logIn-btn {
-        padding: 0px
     }
 
     .form-description {
@@ -566,11 +549,11 @@ main {
         text-align: center;
     }
 
-    .logIn-btn {
+    .btn-main {
         display: none;
     }
 
-  
+
 
     .footer-shape img {
         width: 100vw;
@@ -596,15 +579,15 @@ main {
         z-index: -1;
     }
 
-    .card-img-top{
-        max-width:40vh;
+    .card-img-top {
+        max-width: 40vh;
     }
 
-    .navigation-menu .js-nav-menu{
+    .navigation-menu .js-nav-menu {
         display: flex;
     }
 
-    #sidebar{
+    #sidebar {
         display: none;
     }
 }
@@ -622,9 +605,9 @@ main {
         animation: myfirst 5s 1;
     }
 
-   
-    .card-img-top{
-        max-width:20vh;
+
+    .card-img-top {
+        max-width: 20vh;
     }
 
 
@@ -635,7 +618,7 @@ main {
         justify-items: center;
     }
 
-    .logIn-btn {
+    .btn {
         display: none;
     }
 
@@ -679,14 +662,14 @@ main {
     }
 }
 
-.siteMap{
+.siteMap {
     display: flex;
     justify-content: start;
     margin-top: 2em;
     padding-left: 10px;
 }
 
-.siteMap ul{
+.siteMap ul {
     font-size: 1em;
     margin-top: 2em;
     padding: 0;
@@ -697,7 +680,7 @@ main {
 
 
 
-#sidebar{
+#sidebar {
     display: none;
     background-color: black;
     width: 50vw;
@@ -708,14 +691,14 @@ main {
     opacity: 0.9;
 }
 
-.fa-x{
+.fa-x {
     font-size: 0.9em;
     position: relative;
     left: 45vw;
     top: 0.5em;
 }
 
-.fa-x:hover{
+.fa-x:hover {
     transform: scale(1);
     color: var(--orange);
 }
