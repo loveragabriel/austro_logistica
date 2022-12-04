@@ -32,6 +32,7 @@ nav {
     justify-items: center;
     width: 100vw;
     font-size: 1.3em;
+    z-index: 1;
 }
 
 .navigation-links {
@@ -154,15 +155,7 @@ nav .fa-solid {
 }
 
 
-@media (min-width: 768px) {
-    .logIn-btn {
-        font-size: 0.9em;
-    }
 
-    .about-img {
-        display: none;
-    }
-}
 
 li {
     margin: 10px;
@@ -480,6 +473,7 @@ main {
 /* Media Queries */
 /* **************** */
 
+
 @media (max-width: 950px) {
 
 
@@ -550,6 +544,7 @@ main {
 
     .imagotype {
         display: flex;
+        font-size: 120%;
         justify-content: space-around;
     }
 
