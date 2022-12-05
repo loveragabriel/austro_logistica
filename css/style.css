@@ -17,6 +17,7 @@
     --bleachedCedar: #221623;
     --comoris: #64728b;
     --blue-hover: #aab0e0;
+    --footer-bck: #072146; 
 }
 
 /* General Styles */
@@ -220,51 +221,58 @@ footer {
     width: 100vw;
     z-index: 1;
     height: 20vh;
-    background-color: white;
-    background: linear-gradient(to top, rgba(169, 208, 113, 0)0%, rgba(136, 173, 215, 1)100%)50%;
+    background-color: var(--footer-bck);
+    /* background: linear-gradient(to top, rgba(169, 208, 113, 0)0%, rgba(136, 173, 215, 1)100%)50%; */
+    /* text-align: center; */
+}
+
+.footer-icons{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer-imgtype{
+    margin: 20px;
+    max-width: 300px;
+}
+
+.icons-links{
+    color: white;
+}
+
+
+.fa-brands {
+    color: white;
+    font-size: 2em;
+    margin: 0.3em}
+
+.fa-brands:hover {
+    color: var(--orange);
+    transform: scale(1.3);
+}
+
+.siteMap-links{
+    background-color: var(--footer-bck);
+    display: inline-flex;
+  
+}
+
+#siteMap  a{
+    color: white;
+    padding-left: 1em;
+
+}
+
+.copyRight{
+    margin-top: 2em;
+    background-color: var(--footer-bck);
+    color: var(--surfieGreen);
     text-align: center;
 }
 
-.footer-text {
-    display: flex;
-    justify-content: center;
-    font-size: 10px;
-}
-
-.footer-shape img {
-    width: 100vw;
-    object-fit: cover;
-    background-size: cover;
-    width: 100vw;
-    margin-top: 2%;
-    position: relative;
-    bottom: -5px;
-}
-
-.footer-content {
-    margin-bottom: 2em;
-}
-
-.footer-text-one {
-    position: relative;
-    top: 40px;
-    font-size: 110%;
-
-}
 
 
-
-.links-icons {
-    position: relative;
-    top: 10vh;
-    z-index: 2;
-    cursor: pointer;
-}
-
-.fa-brands {
-    color: --blue;
-    font-size: 2em;
-}
 
 /* About page style */
 .main-about {
@@ -542,16 +550,18 @@ main {
     .navigation-links {
         display: none;
     }
+/* Footer */
+ .footer-icons{
+    display: block;
+  text-align: center;
+ }
 
-    .footer-shape img {
-        width: 100vw;
-        object-fit: cover;
-        background-size: cover;
-        width: 100vw;
-        margin-top: 5%;
-        position: relative;
-        bottom: -5px;
-    }
+ .siteMap-links{
+    display: block;
+    text-align: center;
+ }
+
+
 
     .image {
         display: none;
@@ -619,18 +629,16 @@ main {
         font-size: 1em;
     }
 
-    .footer-shape img {
-        width: 100vw;
-        object-fit: cover;
-        background-size: cover;
-        width: 100vw;
-        margin-top: 15%;
-        position: relative;
-        bottom: -5px;
-        height: 50%;
+    .footer-imgtype{
+        width: 80%;
     }
 
+    .siteMap-links{
+        display: inline-block;
+    }
 }
+
+
 
 
 
