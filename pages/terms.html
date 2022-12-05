@@ -17,7 +17,7 @@
 <body>
     <header>
         <nav>
-            <i class="fa-solid fa-bars"></i>
+            <i class="fa-solid fa-bars" id="menu-btn"></i>
             <ul class="navigation-links">
                 <li><a href="./about.html" data-replace="Austro"><span> Austro </span></a></li>
                 <li><a href="./services.html" data-replace="Servicio"><span> Servicio </span></a></li>
@@ -27,11 +27,19 @@
             <div class="imagotype">
                 <p> <a href="../index.html" data-replace="Austro Logística"><span> Austro Logística </span></a></li>
             </div>
-            <button class="logIn-btn">
-                <a href="../pages/logIn.html"> Ingresar</a>
-            </button>
-            <i class="fa-solid fa-user"></i>
+            <a href="./logIn.html"><button class="btn btn-main"> Ingresar</button>
+                <i class="fa-solid fa-user" id="user-logIn"></i></a>
         </nav>
+        <div id="sidebar">
+            <i class="fa-solid fa-x" id="closeMenu"></i>
+            <ul>
+                <li><a href="./about.html"> Austro </a></li>
+                <li>Servicios</li>
+                <li>Contacto</li>
+                <li>Términos</li>
+            </ul>
+        </div>
+
     </header>
     <main class="main-terms">
 
@@ -84,6 +92,7 @@
             <p class="footer-text">©2022 Gabriel Lovera</p>
         </section>
     </footer>
+    <script src="../js/app.js"></script>
 </body>
 
 </html>
