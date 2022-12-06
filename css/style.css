@@ -31,6 +31,7 @@ nav {
     width: 100vw;
     font-size: 1.3em;
     z-index: 1;
+    padding-top: 10px;
 }
 
 .navigation-links {
@@ -41,6 +42,13 @@ nav {
 }
 
 /* a link Nav Bar */
+
+.imagotype{
+    font-size: 120%;
+    color: white;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
 a {
     overflow: hidden;
     position: relative;
@@ -90,6 +98,9 @@ a:hover::after {
 a span {
     display: inline-block;
     transition: transform .3s cubic-bezier(0.76, 0, 0.24, 1);
+    color: white;
+    font-weight: 800;
+    letter-spacing: 1px;
 }
 
 a:hover span {
@@ -100,16 +111,6 @@ nav .fa-solid{
     display: none;
 }
 
-.imagotype {
-    display: flex;
-    justify-content: space-around;
-    text-align: center;
-    font-size: 1.5em;
-    width: 30vw;
-    z-index: 1;
-    font-weight: 800;
-}
-
 .navigation-menu .js-nav-menu {
     display: none;
 }
@@ -117,9 +118,9 @@ nav .fa-solid{
 .btn {
     z-index: 1;
     appearance: none;
-    border-radius: 5px;
     border-style: none;
-    color: #000000;
+    background-color: var(--footer-bck);
+    color: white;
     cursor: pointer;
     display: inline-block;
     font-size: 1.5rem;
@@ -133,7 +134,6 @@ nav .fa-solid{
     touch-action: manipulation;
     padding: 2px;
 }
-
 
 .btn a {
     text-decoration: none;
@@ -151,7 +151,6 @@ li {
 }
 
 /* About Place */
-
 a:hover {
     color: var(--blue);
 }
@@ -220,10 +219,8 @@ code for use arrow to scrolling down
 footer {
     width: 100vw;
     z-index: 1;
-    height: 20vh;
     background-color: var(--footer-bck);
-    /* background: linear-gradient(to top, rgba(169, 208, 113, 0)0%, rgba(136, 173, 215, 1)100%)50%; */
-    /* text-align: center; */
+    padding: 0;
 }
 
 .footer-icons{
@@ -233,39 +230,45 @@ footer {
 }
 
 .footer-imgtype{
-    margin: 20px;
     max-width: 300px;
+    text-align: center;
+    padding: 1.5em;
 }
 
-.icons-links{
+.icons-links a{
     color: white;
+    font-size: 0.8em;
+    padding:1em;
 }
+
+.footer-imgtype div a {
+    padding: 1em;
+}
+
 
 
 .fa-brands {
     color: white;
     font-size: 2em;
-    margin: 0.3em}
+}
 
 .fa-brands:hover {
     color: var(--orange);
     transform: scale(1.3);
 }
 
-.siteMap-links{
+.siteMap-links a {
     background-color: var(--footer-bck);
-    display: inline-flex;
-  
+    
 }
 
 #siteMap  a{
     color: white;
     padding-left: 1em;
-
+    
 }
-
 .copyRight{
-    margin-top: 2em;
+    margin-top: 1em;
     background-color: var(--footer-bck);
     color: var(--surfieGreen);
     text-align: center;
@@ -282,7 +285,6 @@ footer {
     background-color: rgb(202, 214, 218);
     text-shadow: 0.5px 0.5px 1px rgb(53, 50, 50);
     opacity: 0.9;
-    /* background-image: url(../assets/img/ushuaia_about.jpg); */
     object-fit: cover;
 }
 
@@ -459,6 +461,13 @@ main {
 /* Media Queries */
 /* **************** */
 
+@media (max-width: 1200px){
+    nav {
+        position: absolute;
+        display: grid;
+        grid-template-columns: 2fr 1fr 1fr;
+    }
+}
 
 @media (max-width: 950px) {
 
@@ -515,7 +524,6 @@ main {
     }
 }
 
-
 @media (max-width: 760px) {
 
     nav {
@@ -553,15 +561,22 @@ main {
 /* Footer */
  .footer-icons{
     display: block;
-  text-align: center;
+    text-align: center;
+    padding: 0px;
+    margin: 0;
  }
 
  .siteMap-links{
     display: block;
     text-align: center;
+    padding: 0;
+    margin: 0;
  }
 
-
+ .siteMap-links a{
+    margin: 0;
+    padding: 0;
+ }
 
     .image {
         display: none;
@@ -590,7 +605,37 @@ main {
     }
 }
 
+@media (max-width: 560px) {
+    nav {
+        position: absolute;
+        display: grid;
+        grid-template-columns: 1fr 2fr 1fr;
+    }
+}
+
 @media (max-width:410px) {
+    nav {
+        position: absolute;
+        display: grid;
+        grid-template-columns: 1/2fr 2fr 1/2fr;
+        font-size: 110%;
+    }
+
+    .footer-imgtype{
+        max-width: 300px;
+        text-align: center;
+        padding: 1em;
+    }
+    
+    .icons-links a{
+        color: white;
+        font-size: 0.8em;
+        padding:.5em;
+    }
+    
+    .footer-imgtype div a {
+        padding: .5em;
+    }
     .description p {
         color: --black;
         position: absolute;
@@ -635,11 +680,13 @@ main {
 
     .siteMap-links{
         display: inline-block;
+        font-size: 90%;
+    }
+
+    .icons-links{
+        font-size: 90%;
     }
 }
-
-
-
 
 
 @keyframes myfirst {
@@ -657,21 +704,6 @@ main {
     }
 }
 
-.siteMap {
-    display: flex;
-    justify-content: start;
-    margin-top: 2em;
-    padding-left: 10px;
-}
-
-.siteMap ul {
-    font-size: 1em;
-    margin-top: 2em;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    line-height: 1.5vh;
-}
 
 
 
