@@ -217,10 +217,9 @@ code for use arrow to scrolling down
 
 /* Footer style */
 footer {
-    width: 100vw;
     z-index: 1;
     background-color: var(--footer-bck);
-    padding: 0;
+    padding: 1em;
 }
 
 .footer-icons{
@@ -244,8 +243,6 @@ footer {
 .footer-imgtype div a {
     padding: 1em;
 }
-
-
 
 .fa-brands {
     color: white;
@@ -273,9 +270,6 @@ footer {
     color: var(--surfieGreen);
     text-align: center;
 }
-
-
-
 
 /* About page style */
 .main-about {
@@ -307,7 +301,6 @@ footer {
 
 }
 
-
 .title-about {
     margin: 0.5em;
     font-weight: 400;
@@ -317,7 +310,6 @@ footer {
     font-size: 250%;
     color: var(--title);
 }
-
 
 .about-team-description {
     font-size: 200%;
@@ -371,17 +363,12 @@ footer {
     margin: auto;
 }
 
-
 .about-img:hover .overlay {
     opacity: 1;
 
 }
 
 /* Service Page style */
-
-
-
-
 /* Form section style */
 
 .form-description {
@@ -436,26 +423,44 @@ label {
 .main-terms {
     padding: 2em 5em;
     padding-bottom: 15em;
-
 }
 
 main {
     background-color: rgb(202, 214, 218);
 }
 
-
-.collapse,
+/* .collapse,
 .navbar {
     display: none;
-}
+} */
 
 .form-page {
     background-color: rgb(202, 214, 218);
 }
 
+/* sidebar */
+#sidebar {
+    display: none;
+    background-color: black;
+    width: 50vw;
+    height: 100%;
+    z-index: 2;
+    position: absolute;
+    color: white;
+    opacity: 0.9;
+}
 
+.fa-x {
+    font-size: 0.9em;
+    position: relative;
+    left: 45vw;
+    top: 0.5em;
+}
 
-
+.fa-x:hover {
+    transform: scale(1);
+    color: var(--orange);
+}
 
 /* **************** */
 /* Media Queries */
@@ -688,7 +693,6 @@ main {
     }
 }
 
-
 @keyframes myfirst {
     0% {
         line-height: 2.5em;
@@ -704,28 +708,3 @@ main {
     }
 }
 
-
-
-
-#sidebar {
-    display: none;
-    background-color: black;
-    width: 50vw;
-    height: 100%;
-    z-index: 2;
-    position: absolute;
-    color: white;
-    opacity: 0.9;
-}
-
-.fa-x {
-    font-size: 0.9em;
-    position: relative;
-    left: 45vw;
-    top: 0.5em;
-}
-
-.fa-x:hover {
-    transform: scale(1);
-    color: var(--orange);
-}
