@@ -365,11 +365,10 @@ footer {
 }
 
 .title-service {
-    margin: 0.5em;
+    margin-top: 4.5em;
     font-weight: 800;
     display: flex;
     justify-content: center;
-    align-items: center;
     font-size: 250%;
     color: var(--title);
     letter-spacing: 1px;
