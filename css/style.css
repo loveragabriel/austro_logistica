@@ -356,14 +356,18 @@ footer {
 }
 
 /* Service Page style */
-.services-main, .contact-main, .log-in-main{
+.services-main,
+.contact-main,
+.log-in-main {
     justify-items: center;
     background-color: #1973b8;
     opacity: 0.9;
     object-fit: cover;
 }
 
-.title-service, .title-contact, .title-logIn {
+.title-service,
+.title-contact,
+.title-logIn {
     padding-top: 2.5em;
     font-weight: 800;
     text-align: center;
@@ -467,7 +471,7 @@ footer {
 
 /* Form section style */
 
-.contact-description{
+.contact-description {
     color: white;
     word-spacing: 1px;
     line-height: 1.4em;
@@ -490,14 +494,14 @@ footer {
     align-items: flex-start;
 }
 
-legend{
-    margin-bottom:1.5em;
+legend {
+    margin-bottom: 1.5em;
     font-weight: 800;
     word-spacing: 1.3px;
     letter-spacing: 1px;
 }
 
-.img-form{
+.img-form {
     object-fit: cover;
     width: 60vw;
     height: 50vh;
@@ -515,8 +519,8 @@ input {
     padding: 1em;
     margin: 5px;
     font-size: 0.5em;
-position: relative;
-right: 0px;
+    position: relative;
+    right: 0px;
 }
 
 label {
@@ -526,7 +530,7 @@ label {
 
 /* Log In Page  */
 
-.log-in-section{
+.log-in-section {
     background-color: var(--info-color);
     margin: 25px 25px 0px 25px;
     opacity: 0.8;
@@ -540,11 +544,11 @@ label {
 .tooltip {
     position: relative;
     border-bottom: 1px dotted black;
-    color:  var(--orange);
+    color: var(--orange);
     font-weight: 750;
     padding: 10px;
     text-align: right;
-  }
+}
 
 .tooltip .tooltiptext {
     visibility: hidden;
@@ -555,32 +559,34 @@ label {
     border-radius: 6px;
     padding: 5px 0;
     /* Position the tooltip */
-  position: absolute;
-  z-index: 1;
-  right: 1em;
+    position: absolute;
+    z-index: 1;
+    right: 1em;
 }
+
 .tooltip:hover .tooltiptext {
     visibility: visible;
-  }
+}
 
-.log-in-img{
+.log-in-img {
     object-fit: cover;
     position: relative;
     height: 90vh;
     width: 57vw;
 }
 
-.form-log-in{
+.form-log-in {
     background-color: #106D86;
     margin: 0px 20px 0px;
     width: 95%;
 }
-.form-log-in input{
+
+.form-log-in input {
     width: 90%;
 }
 
 
-#log-in-form{
+#log-in-form {
     font-size: 1.3em;
     background-color: white;
     margin: 1em;
@@ -590,27 +596,27 @@ label {
     font-weight: 800;
 }
 
-.mb-3{
+.mb-3 {
     width: 25vw;
 }
 
-.btn-sign-in{
+.btn-sign-in {
     display: flex;
     justify-content: center;
 }
 
-.sign-in{
+.sign-in {
     text-align: center;
     width: 40%;
 }
 
-.form-link{ 
+.form-link {
     margin-top: 3.5em;
     text-align: center;
     color: white;
 }
 
-.form-link a{
+.form-link a {
     cursor: pointer;
     color: var(--orange);
     font-weight: 850;
@@ -685,14 +691,14 @@ main {
         grid-template-columns: 2fr 1fr 1fr;
     }
 
-    .card{
+    .card {
         height: 55vh;
     }
 }
 
 @media (max-width: 950px) {
 
-/* 
+    /* 
     .card-img-top {
         max-width: 50vh;
     } */
@@ -801,17 +807,17 @@ main {
     }
 
     .card-title-front {
-        top:30vh;
+        top: 30vh;
         left: 2em;
     }
 
-    .card-body{
+    .card-body {
         right: -91%;
     }
 
     /* contact */
     form {
-        margin: 0.5em;    
+        margin: 0.5em;
         font-size: 1.5em;
         padding: 10px;
         color: white;
@@ -823,25 +829,25 @@ main {
     }
 
     /* LogIn */
-    .log-in-section{
+    .log-in-section {
         display: block;
         justify-content: center;
-        
+
     }
 
-    .form-log-in{
+    .form-log-in {
         margin: 20px;
     }
 
-    #log-in-form{
+    #log-in-form {
         height: 40vh;
     }
 
-    .px950{
+    .px950 {
         display: none;
     }
 
-    .mb-3{
+    .mb-3 {
         display: inline;
     }
 }
@@ -918,7 +924,7 @@ main {
 
     .card-img-top {
         max-width: 40vh;
-        
+
     }
 
     .navigation-menu .js-nav-menu {
@@ -929,12 +935,12 @@ main {
         display: none;
     }
 
-    .card-body{
+    .card-body {
         width: 83%;
     }
 
     /* contact */
-    .contact-description{
+    .contact-description {
         font-size: 1.3em;
     }
 
@@ -945,7 +951,7 @@ main {
 
     }
 
-    .img-form{
+    .img-form {
         margin-top: 0;
         padding: 0;
         width: 95vw;
@@ -953,11 +959,11 @@ main {
         opacity: 0.8;
     }
 
-    .form{
+    .form {
         text-align: center;
     }
 
-    form input{
+    form input {
         padding: 0.9em;
         width: 60vw;
     }
@@ -966,7 +972,7 @@ main {
         width: 60%;
     }
 
-    .log-in-section{
+    .log-in-section {
         display: block;
     }
 }
@@ -979,25 +985,25 @@ main {
         grid-template-columns: 1fr 2fr 1fr;
     }
 
-    .card-body{
+    .card-body {
         width: 80%;
     }
 
-    .contact-description{
+    .contact-description {
         font-size: 1em;
     }
 
-    .img-form{
-        width:90vw;
+    .img-form {
+        width: 90vw;
     }
 
-    form input{
+    form input {
         padding: 0.9em;
         width: 75vw;
     }
 
-    .log-in-main{
-      width: auto;
+    .log-in-main {
+        width: auto;
     }
 }
 
@@ -1076,11 +1082,11 @@ main {
         font-size: 90%;
     }
 
-    .card{
+    .card {
         width: 95%;
     }
-   
-    .card-body{
+
+    .card-body {
         width: 80%;
         top: 0px;
         padding: 10px;
@@ -1088,86 +1094,96 @@ main {
         height: -webkit-fill-available;
     }
 
-    .card-title{
+    .card-title {
         font-size: 1.5em;
     }
-    .card-info{
+
+    .card-info {
         font-size: 0.9em;
         line-height: 20px;
         margin: 10px 0px;
     }
 
-    .title-service{
+    .title-service {
         font-size: 200%;
         padding-top: 2.5em;
     }
 
     /* contact */
-    .img-form{
+    .img-form {
         display: none;
     }
 
-    .sign-in{
-    display: flex;   
-    width: 50vw;
-   justify-content: center;
+    .sign-in {
+        display: flex;
+        width: 50vw;
+        justify-content: center;
+    }
+
+    .log-in-section {
+        margin: 5px 5px 0px 5px;
+        padding: 10px;
+    }
+
+    .form-log-in {
+        margin: 5px;
+    }
+
+    #form-log-in {
+        margin: 0em;
+    }
+
+    
+    form input {
+        margin: 0px
+    }
 }
 
-.log-in-section {
-    margin: 5px 5px 0px 5px;
-    padding: 10px;
-}
+@media (max-height: 280px) {
 
-.form-log-in{
-    margin: 5px ;
-}
-
-#form-log-in{
-    margin:0em;
-}
-}
-@media (max-height: 280px){
-
-    .card{
+    .card {
         height: 80%;
     }
-    .card-title{
+
+    .card-title {
         font-size: 1em;
-       
+
     }
 
-    .card-info{
+    .card-info {
         font-size: .9em;
         line-height: 12px;
         margin: 10px 0px;
     }
 
-    .card-body{
+    .card-body {
         height: 70%;
     }
 
-    #log-in-form{
+    #log-in-form {
         height: 60vh;
     }
 
+
 }
 
-@media (max-height: 600px){
-    .card{
+@media (max-height: 600px) {
+    .card {
         height: 80%;
     }
-    .card-title{
+
+    .card-title {
         font-size: 1.3em;
-       
+
     }
 
-    .card-info{
+    .card-info {
         font-size: 1em;
         line-height: 15px;
         margin: 10px 0px;
     }
 
-    .card-body{
+    .card-body {
         height: 70%;
     }
 }
