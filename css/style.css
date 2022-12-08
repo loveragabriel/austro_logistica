@@ -528,11 +528,13 @@ label {
 
 .log-in-section{
     background-color: var(--info-color);
-    margin: 25px;
+    margin: 25px 25px 0px 25px;
     opacity: 0.8;
     padding: 20px;
     display: flex;
     flex-direction: row;
+    border-radius: 8px;
+
 }
 
 .tooltip {
@@ -570,12 +572,48 @@ label {
 .form-log-in{
     background-color: #106D86;
     margin: 0px 20px 0px;
+    width: 95%;
+}
+.form-log-in input{
+    width: 100%;
 }
 
 #log-in-form{
     font-size: 1.3em;
+    background-color: white;
+    margin: 1em;
+    border-radius: 2px;
+    box-shadow: 2px 2px 10px rgb(48, 44, 44);
+    color: black;
+    font-weight: 800;
 }
 
+.mb-3{
+    width: 25vw;
+}
+
+.btn-sign-in{
+    display: flex;
+    justify-content: center;
+}
+
+.sign-in{
+    text-align: center;
+    width: 40%;
+}
+
+.form-link{ 
+    margin-top: 3.5em;
+    text-align: center;
+    color: white;
+}
+
+.form-link a{
+    cursor: pointer;
+    color: var(--orange);
+    font-weight: 850;
+    letter-spacing: 1px;
+}
 
 /* Term page style */
 
