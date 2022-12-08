@@ -376,11 +376,12 @@ footer {
 .services-container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
 }
 
 .card-title-front {
     position: absolute;
-    top: 15vh;
+    top: 45vh;
     left: 1em;
     color: white;
     font-size: 150%;
@@ -639,13 +640,13 @@ main {
     .services-container {
         display: grid;
         grid-template-columns: 1fr;
-        max-width: 100wv;
+        justify-items: center;
     }
 
     .card {
         margin: 2em;
-        max-width: 80vw;
-        height: 500px;
+        max-width: 95vw;
+        height: 45vh;
         border-radius: 20px;
         overflow: hidden;
         border: 8px #fff;
@@ -689,6 +690,20 @@ main {
         outline: none;
         font-weight: 500;
         cursor: pointer;
+    }
+
+    .card-img {
+        width: 90vw;
+        height: 41vh;
+    }
+
+    .card-title-front {
+        top:30vh;
+        left: 2em;
+    }
+
+    .card-body{
+        right: -91%;
     }
 }
 
@@ -764,6 +779,7 @@ main {
 
     .card-img-top {
         max-width: 40vh;
+        
     }
 
     .navigation-menu .js-nav-menu {
@@ -773,6 +789,10 @@ main {
     #sidebar {
         display: none;
     }
+
+    .card-body{
+        width: 83%;
+    }
 }
 
 @media (max-width: 560px) {
@@ -780,6 +800,10 @@ main {
         position: absolute;
         display: grid;
         grid-template-columns: 1fr 2fr 1fr;
+    }
+
+    .card-body{
+        width: 80%;
     }
 }
 
@@ -856,6 +880,32 @@ main {
 
     .icons-links {
         font-size: 90%;
+    }
+
+    .card{
+        width: 95%;
+    }
+   
+    .card-body{
+        width: 80%;
+        top: 0px;
+        padding: 10px;
+        font-size: 90%;
+        height: -webkit-fill-available;
+    }
+
+    .card-title{
+        font-size: 1.5em;
+    }
+    .card-info{
+        font-size: 0.9em;
+        line-height: 20px;
+        margin: 10px 0px;
+    }
+
+    .title-service{
+        font-size: 200%;
+        padding-top: 2.5em;
     }
 }
 
