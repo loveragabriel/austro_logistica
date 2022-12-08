@@ -319,11 +319,12 @@ footer {
 
 /* Contact form */
 
-.form-description p {
-    margin: 2em;
-    padding: 1em;
+/* .form-description p {
+    margin: 1em;
+    padding: 5em;
     width: 80vw;
-}
+    height: 60vh;
+} */
 
 .overlay {
     position: relative;
@@ -355,17 +356,15 @@ footer {
 }
 
 /* Service Page style */
-.services-main {
-    /* display: grid;
-    grid-template-rows: 1fr 1fr; */
+.services-main, .contact-main{
     justify-items: center;
     background-color: #1973b8;
     opacity: 0.9;
     object-fit: cover;
 }
 
-.title-service {
-    padding-top: 3.5em;
+.title-service, .title-contact {
+    padding-top: 2.5em;
     font-weight: 800;
     text-align: center;
     font-size: 250%;
@@ -466,19 +465,17 @@ footer {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
 /* Form section style */
 
+.contact-description{
+    color: white;
+    word-spacing: 1px;
+    line-height: 1.4em;
+    padding: 2.5em;
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: 500;
+}
 
 .form-description {
     display: flex;
@@ -488,27 +485,45 @@ footer {
 }
 
 .form-section {
-    background-color: rgb(202, 214, 218);
+    display: flex;
     width: 100vw;
-    height: 100vh;
+    align-items: flex-start;
+}
+
+legend{
+    margin-bottom:1.5em;
+    font-weight: 800;
+    word-spacing: 1.3px;
+    letter-spacing: 1px;
+}
+
+.img-form{
+    object-fit: cover;
+    width: 60vw;
+    height: 50vh;
+    margin: 2em;
 }
 
 form {
-    font-size: 1.3em;
+    font-size: 2em;
     padding: 10px;
+    color: white;
 }
 
 input {
     width: 20vw;
-    padding: 5px;
+    padding: 1em;
     margin: 5px;
     font-size: 0.5em;
+position: relative;
+right: 0px;
 }
 
 label {
     font-size: 0.8em;
     padding: 10px;
 }
+
 
 /* Term page style */
 
@@ -705,6 +720,14 @@ main {
     .card-body{
         right: -91%;
     }
+
+    /* contact */
+    form {
+        margin: 0.5em;    
+        font-size: 1.5em;
+        padding: 10px;
+        color: white;
+    }
 }
 
 @media (max-width: 760px) {
@@ -793,6 +816,30 @@ main {
     .card-body{
         width: 83%;
     }
+
+    /* contact */
+    .contact-description{
+        font-size: 1.3em;
+    }
+
+    .form-section {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+
+    }
+
+    .img-form{
+        margin-top: 0;
+        padding: 0;
+        width: 95vw;
+        height: 15vh;
+        opacity: 0.8;
+    }
+
+    .form{
+        text-align: center;
+    }
 }
 
 @media (max-width: 560px) {
@@ -804,6 +851,14 @@ main {
 
     .card-body{
         width: 80%;
+    }
+
+    .contact-description{
+        font-size: 1em;
+    }
+
+    .img-form{
+        width:90vw;
     }
 }
 
@@ -907,7 +962,17 @@ main {
         font-size: 200%;
         padding-top: 2.5em;
     }
+
+    /* contact */
+    .img-form{
+        display: none;
+    }
+
+    .form-section{
+
+    }
 }
+
 
 @keyframes myfirst {
     0% {
