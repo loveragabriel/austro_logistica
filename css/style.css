@@ -356,8 +356,8 @@ footer {
 
 /* Service Page style */
 .services-main {
-    display: grid;
-    grid-template-rows: 1fr 1fr;
+    /* display: grid;
+    grid-template-rows: 1fr 1fr; */
     justify-items: center;
     background-color: #1973b8;
     opacity: 0.9;
@@ -365,10 +365,9 @@ footer {
 }
 
 .title-service {
-    margin-top: 4.5em;
+    padding-top: 3.5em;
     font-weight: 800;
-    display: flex;
-    justify-content: center;
+    text-align: center;
     font-size: 250%;
     color: var(--title);
     letter-spacing: 1px;
@@ -379,29 +378,38 @@ footer {
     grid-template-columns: 1fr 1fr 1fr;
 }
 
-.card{
-    margin: 2em;
+.card-title-front {
+    position: absolute;
+    top: 15vh;
+    left: 1em;
+    color: white;
+    font-size: 150%;
+    letter-spacing: 1px;
+}
+
+.card {
+    margin: 3em;
     max-width: 30vw;
     height: 500px;
     border-radius: 20px;
     overflow: hidden;
-    border: 8px  #fff;
+    border: 8px #fff;
     position: relative;
 }
 
-.card h3{
+.card h3 {
     position: relative;
-    z-index: 1  ;
+    z-index: 1;
 }
 
-.card-img{
+.card-img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     border-radius: 15px;
 }
 
-.card-body{
+.card-body {
     width: 85%;
     height: 100%;
     top: 0;
@@ -418,32 +426,32 @@ footer {
     transition: 1s;
 }
 
-.card:hover .card-body{
+.card:hover .card-body {
     position: absolute;
     right: 0px;
 }
 
-.card-title{
+.card-title {
     text-transform: uppercase;
     font-size: 2em;
     font-weight: 500;
 }
 
 
-.card-sub-title{
+.card-sub-title {
     text-transform: capitalize;
     font-size: 14px;
     font-weight: 300;
 }
 
-.card-info{
+.card-info {
     font-size: 16px;
     line-height: 25px;
     margin: 30px 0;
     font-weight: 400;
 }
 
-.card-btn{
+.card-btn {
     color: #1f3d47;
     background: #8fabba;
     padding: 10px 20px;
@@ -572,14 +580,18 @@ main {
         display: grid;
         grid-template-columns: 2fr 1fr 1fr;
     }
+
+    .card{
+        height: 55vh;
+    }
 }
 
 @media (max-width: 950px) {
 
-
+/* 
     .card-img-top {
         max-width: 50vh;
-    }
+    } */
 
     .footer-shape img {
         width: 100vw;
@@ -605,8 +617,9 @@ main {
         z-index: 1;
     }
 
-    .card {
-        width: 60vw;
+    .card-img {
+        width: 90vw;
+        height: 5vh;
         margin: 2em;
     }
 
@@ -622,61 +635,61 @@ main {
     }
 
     /* Service */
-    
-.services-container {
-    display: grid;
-    grid-template-columns: 1fr;
-    max-width:100wv;
-}
 
-.card{
-    margin: 2em;
-    max-width: 80vw;
-    height: 500px;
-    border-radius: 20px;
-    overflow: hidden;
-    border: 8px  #fff;
-    position: relative;
-}
+    .services-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        max-width: 100wv;
+    }
 
-
-.card:hover .card-body{
-    position: absolute;
-    right: 0px;
-}
-
-.card-title{
-    text-transform: uppercase;
-    font-size: 2em;
-    font-weight: 500;
-}
+    .card {
+        margin: 2em;
+        max-width: 80vw;
+        height: 500px;
+        border-radius: 20px;
+        overflow: hidden;
+        border: 8px #fff;
+        position: relative;
+    }
 
 
-.card-sub-title{
-    text-transform: capitalize;
-    font-size: 14px;
-    font-weight: 300;
-}
+    .card:hover .card-body {
+        position: absolute;
+        right: 0px;
+    }
 
-.card-info{
-    font-size: 16px;
-    line-height: 25px;
-    margin: 30px 0;
-    font-weight: 400;
-}
+    .card-title {
+        text-transform: uppercase;
+        font-size: 2em;
+        font-weight: 500;
+    }
 
-.card-btn{
-    color: #1f3d47;
-    background: #8fabba;
-    padding: 10px 20px;
-    width: 100px;
-    border-radius: 5px;
-    text-transform: capitalize;
-    border: none;
-    outline: none;
-    font-weight: 500;
-    cursor: pointer;
-}
+
+    .card-sub-title {
+        text-transform: capitalize;
+        font-size: 14px;
+        font-weight: 300;
+    }
+
+    .card-info {
+        font-size: 16px;
+        line-height: 25px;
+        margin: 30px 0;
+        font-weight: 400;
+    }
+
+    .card-btn {
+        color: #1f3d47;
+        background: #8fabba;
+        padding: 10px 20px;
+        width: 100px;
+        border-radius: 5px;
+        text-transform: capitalize;
+        border: none;
+        outline: none;
+        font-weight: 500;
+        cursor: pointer;
+    }
 }
 
 @media (max-width: 760px) {
