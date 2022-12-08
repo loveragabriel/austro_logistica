@@ -358,7 +358,8 @@ footer {
 /* Service Page style */
 .services-main,
 .contact-main,
-.log-in-main {
+.log-in-main,
+.signIn-main {
     justify-items: center;
     background-color: #1973b8;
     opacity: 0.9;
@@ -367,7 +368,8 @@ footer {
 
 .title-service,
 .title-contact,
-.title-logIn {
+.title-logIn,
+.title-signIn{
     padding-top: 2.5em;
     font-weight: 800;
     text-align: center;
@@ -680,6 +682,31 @@ main {
     color: var(--orange);
 }
 
+/* signIn  */
+
+signIn-main{
+    margin-bottom: 1em;
+    margin: 20vw 0vw;
+   
+}
+
+.invalid-feedback{
+    color: var(--orange);
+    font-size: 70%;
+    font-weight: 500;
+    letter-spacing:0.9px;
+}
+
+.sign-in-form{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--surfieGreen);
+    border-radius: 8px;
+    box-shadow: 1px 1px 20px rgb(42, 41, 41);
+    padding-bottom: 1em;
+    max-width: 50vw;
+    margin: 5vh 25vw;
+}
 /* **************** */
 /* Media Queries */
 /* **************** */
@@ -975,6 +1002,10 @@ main {
     .log-in-section {
         display: block;
     }
+
+    .sign-in-form div input{
+        width: 40vw;
+    }
 }
 
 
@@ -1136,6 +1167,16 @@ main {
     
     form input {
         margin: 0px
+    }
+
+    .sign-in-form{
+        margin: 5vh 20vw;
+
+    }
+
+    .sign-in-form div input{
+        width: 40vw;
+        padding: 10px;
     }
 }
 

@@ -10,39 +10,51 @@
   <link rel="icon" type="image/x-icon" href="../assets/img/Austro-icon.svg">
   <link rel="stylesheet" href="../css/style.css">
   <link rel="stylesheet" href="..//sass/main.css">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous"> -->
   <title>Registro | Austral Logística</title>
 </head>
 
 <body>
-  <main>
-    <nav><a href="../index.html"><button class="btn m-2">Home</button></a></nav>
+  <header>
+    <nav>
+      <i class="fa-solid fa-bars" id="menu-btn"></i>
+      <ul class="navigation-links">
+        <li><a href="./about.html" data-replace="Austro"><span> Austro </span></a></li>
+        <li><a href="./services.html" data-replace="Servicio"><span> Servicio </span></a></li>
+        <li><a href="./contact.html" data-replace="Contacto"><span> Contacto </span></a></li>
+        <li><a href="./terms.html" data-replace="Términos"><span> Términos </span></a></li>
+      </ul>
+      <div>
+        <a href="../index.html" data-replace="Austro Logística" class="imagotype"><span> Austro Logística
+          </span></a></li>
+      </div>
+      <a href="./logIn.html"><button class="btn btn-main"> Ingresar</button>
+        <i class="fa-solid fa-user" id="user-logIn"></i></a>
+    </nav>
     <div id="sidebar">
       <i class="fa-solid fa-x" id="closeMenu"></i>
       <ul>
-          <li><a href="./about.html"> Austro </a></li>
-          <li><a href="./services.html"> Servicios </a></li>
-          <li><a href="./contact.html"> Contacto </a></li>
-          <li><a href="./terms.html"> Términos </a></li>
+        <li><a href="./about.html"> Austro </a></li>
+        <li><a href="./services.html"> Servicios </a></li>
+        <li><a href="./contact.html"> Contacto </a></li>
+        <li><a href="./terms.html"> Términos </a></li>
+        <li><a href="./signIn.html"> Registrarse </a></li>
       </ul>
-  </div>
+    </div>
+  </header>
+  <main class="signIn-main">
+
     <h2 class="title-signIn">Registrate</h2>
 
-    <form class="row g-3 needs-validation m-5 h-100" novalidate>
+    <form class="sign-in-form" novalidate>
       <div class="col-md-4">
         <label for="validationCustom01" class="form-label">Nombre</label>
         <input type="text" class="form-control" id="validationCustom01" value="Mark" required>
-        <div class="valid-feedback">
-          Looks good!
-        </div>
       </div>
       <div class="col-md-4">
         <label for="validationCustom02" class="form-label">Apellido</label>
         <input type="text" class="form-control" id="validationCustom02" value="Otto" required>
-        <div class="valid-feedback">
-          Looks good!
-        </div>
       </div>
       <div class="col-md-4">
         <label for="validationCustomUsername" class="form-label">Correo </label>
@@ -50,7 +62,7 @@
           <input type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend"
             required>
           <div class="invalid-feedback">
-            Please choose a username.
+            Ingrese un nombre de usuario.
           </div>
         </div>
       </div>
@@ -58,7 +70,7 @@
         <label for="validationCustom03" class="form-label">Empresa</label>
         <input type="text" class="form-control" id="validationCustom03" required>
         <div class="invalid-feedback">
-          Please provide a valid city.
+          Seleccione una Ciudad.
         </div>
       </div>
       <div class="col-md-3">
@@ -69,17 +81,16 @@
           <option>Rio Grande</option>
           <option>Ushuaia</option>
 
-
         </select>
         <div class="invalid-feedback">
-          Please select a valid state.
+          Selecciones una provincia.
         </div>
       </div>
       <div class="col-md-3">
         <label for="validationCustom05" class="form-label">Código Postal</label>
         <input type="text" class="form-control" id="validationCustom05" required>
         <div class="invalid-feedback">
-          Please provide a valid zip.
+          Ingrese el código postal de su empresa.
         </div>
       </div>
 
@@ -91,32 +102,32 @@
   </main>
   <footer>
     <div class="footer-icons">
-        <div>
-            <a href="../index.html">
-                <img src="../assets/img/Austro-ImgType-white.png" class="footer-imgtype">
-            </a>
-        </div>
-        <div class="icons-links">
-            <a href="../index.html"><i class="fa-brands fa-linkedin"></i></a>
-            <a href="../index.html"> <i class="fa-brands fa-github"></i></a>
-            <a href="./signIn.html"><i class="fa-solid fa-brands fa-right-to-bracket"></i></a>
-        </div>
+      <div>
+        <a href="../index.html">
+          <img src="../assets/img/Austro-ImgType-white.png" class="footer-imgtype">
+        </a>
+      </div>
+      <div class="icons-links">
+        <a href="../index.html"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="../index.html"> <i class="fa-brands fa-github"></i></a>
+        <a href="./signIn.html"><i class="fa-solid fa-brands fa-right-to-bracket"></i></a>
+      </div>
     </div>
     <div class="siteMap-links" id="siteMap">
-        <a href="./about.html">Austro</a>
-        <a href="./contact.html">Contacto</a>
-        <a href="./logIn.html">Ingreso</a>
-        <a href="./services.html">Servicios</a>
-        <a href="./signIn.html">Registro</a>
-        <a href="./terms.html">Términos</a>
+      <a href="./about.html">Austro</a>
+      <a href="./contact.html">Contacto</a>
+      <a href="./logIn.html">Ingreso</a>
+      <a href="./services.html">Servicios</a>
+      <a href="./signIn.html">Registro</a>
+      <a href="./terms.html">Términos</a>
     </div>
     <div class="copyRight">
-        <p>
-            2022 Gabriel Lovera
-        </p>
+      <p>
+        2022 Gabriel Lovera
+      </p>
     </div>
 
-</footer>
+  </footer>
   <script src="../js/app.js"></script>
 </body>
 
