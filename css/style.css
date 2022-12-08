@@ -557,6 +557,7 @@ label {
     /* Position the tooltip */
   position: absolute;
   z-index: 1;
+  right: 1em;
 }
 .tooltip:hover .tooltiptext {
     visibility: visible;
@@ -575,8 +576,9 @@ label {
     width: 95%;
 }
 .form-log-in input{
-    width: 100%;
+    width: 90%;
 }
+
 
 #log-in-form{
     font-size: 1.3em;
@@ -814,6 +816,34 @@ main {
         padding: 10px;
         color: white;
     }
+
+    .sign-in {
+        width: 50%;
+        margin-top: 2em
+    }
+
+    /* LogIn */
+    .log-in-section{
+        display: block;
+        justify-content: center;
+        
+    }
+
+    .form-log-in{
+        margin: 20px;
+    }
+
+    #log-in-form{
+        height: 40vh;
+    }
+
+    .px950{
+        display: none;
+    }
+
+    .mb-3{
+        display: inline;
+    }
 }
 
 @media (max-width: 760px) {
@@ -931,7 +961,16 @@ main {
         padding: 0.9em;
         width: 60vw;
     }
+
+    .sign-in {
+        width: 60%;
+    }
+
+    .log-in-section{
+        display: block;
+    }
 }
+
 
 @media (max-width: 560px) {
     nav {
@@ -955,6 +994,10 @@ main {
     form input{
         padding: 0.9em;
         width: 75vw;
+    }
+
+    .log-in-main{
+      width: auto;
     }
 }
 
@@ -1064,11 +1107,25 @@ main {
         display: none;
     }
 
-    .form-section{
-
-    }
+    .sign-in{
+    display: flex;   
+    width: 50vw;
+   justify-content: center;
 }
 
+.log-in-section {
+    margin: 5px 5px 0px 5px;
+    padding: 10px;
+}
+
+.form-log-in{
+    margin: 5px ;
+}
+
+#form-log-in{
+    margin:0em;
+}
+}
 @media (max-height: 280px){
 
     .card{
@@ -1088,6 +1145,11 @@ main {
     .card-body{
         height: 70%;
     }
+
+    #log-in-form{
+        height: 60vh;
+    }
+
 }
 
 @media (max-height: 600px){
