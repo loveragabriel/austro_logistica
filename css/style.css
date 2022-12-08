@@ -481,7 +481,7 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 80vw;
+    width: 100vw;
 }
 
 .form-section {
@@ -840,6 +840,11 @@ main {
     .form{
         text-align: center;
     }
+
+    form input{
+        padding: 0.9em;
+        width: 60vw;
+    }
 }
 
 @media (max-width: 560px) {
@@ -859,6 +864,11 @@ main {
 
     .img-form{
         width:90vw;
+    }
+
+    form input{
+        padding: 0.9em;
+        width: 75vw;
     }
 }
 
