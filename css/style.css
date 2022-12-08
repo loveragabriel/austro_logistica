@@ -1090,6 +1090,26 @@ main {
     }
 }
 
+@media (max-height: 600px){
+    .card{
+        height: 80%;
+    }
+    .card-title{
+        font-size: 1.3em;
+       
+    }
+
+    .card-info{
+        font-size: 1em;
+        line-height: 15px;
+        margin: 10px 0px;
+    }
+
+    .card-body{
+        height: 70%;
+    }
+}
+
 
 @keyframes myfirst {
     0% {
