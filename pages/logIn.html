@@ -6,31 +6,56 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://kit.fontawesome.com/f9bbe18ed9.js" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="..//sass/main.css">
   <!-- Tab icon -->
   <link rel="icon" type="image/x-icon" href="../assets/img/Austro-icon.svg">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
   <link rel="stylesheet" href="../css/style.css">
   <title>Ingreso | Austro Logistica</title>
 </head>
 
 <body>
-  <main class="pb-4">
+  <header>
     <nav>
-      <a href="../index.html"><button class="">Home</button></a>
+        <i class="fa-solid fa-bars" id="menu-btn"></i>
+        <ul class="navigation-links">
+            <li><a href="./about.html" data-replace="Austro"><span> Austro </span></a></li>
+            <li><a href="./services.html" data-replace="Servicio"><span> Servicio </span></a></li>
+            <li><a href="./contact.html" data-replace="Contacto"><span> Contacto </span></a></li>
+            <li><a href="./terms.html" data-replace="Términos"><span> Términos </span></a></li>
+        </ul>
+        <div>
+            <a href="../index.html" data-replace="Austro Logística" class="imagotype"><span> Austro Logística
+                </span></a></li>
+        </div>
+        <a href="./pages/logIn.html"><button class="btn btn-main"> Ingresar</button>
+            <i class="fa-solid fa-user" id="user-logIn"></i></a>
     </nav>
     <div id="sidebar">
-      <i class="fa-solid fa-x" id="closeMenu"></i>
-      <ul>
-          <li><a href="./about.html"> Austro </a></li>
-          <li><a href="./services.html"> Servicios </a></li>
-          <li><a href="./contact.html"> Contacto </a></li>
-          <li><a href="./terms.html"> Términos </a></li>
-      </ul>
-  </div>
-    <h2 class="title-logIn">Ingresar</h2>
-    <form class="m-5">
+        <i class="fa-solid fa-x" id="closeMenu"></i>
+        <ul>
+            <li><a href="./about.html"> Austro </a></li>
+            <li><a href="./services.html"> Servicios </a></li>
+            <li><a href="./contact.html"> Contacto </a></li>
+            <li><a href="./terms.html"> Términos </a></li>
+        </ul>
+    </div>
+</header>
+<div id="sidebar">
+  <i class="fa-solid fa-x" id="closeMenu"></i>
+  <ul>
+      <li><a href="./about.html"> Austro </a></li>
+      <li><a href="./services.html"> Servicios </a></li>
+      <li><a href="./contact.html"> Contacto </a></li>
+      <li><a href="./terms.html"> Términos </a></li>
+  </ul>
+</div>
+  <main class="log-in-main">
+    <h2 class="title-logIn">Ingresar</h2> 
+    <section class="log-in-section">
+      <div class="form-log-in">
+        <p class="help-p tooltip">¡Ayuda!
+          <span class="tooltiptext">Ingresa tus credenciales para acceder a tus servicios</span>
+        </p>
+    <form id="log-in-form">
       <div class="mb-3">
         <label for="exampleInputEmail1" class="form-label">Correo</label>
         <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
@@ -44,10 +69,11 @@
         <a href="./signIn.html" class="">Registrarse</a>
       </div>
     </form>
+  </div>
+    <img src="../assets/img/ushuaia_about.jpg" alt="" class="log-in-img">
+    </section>
   </main>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
-    crossorigin="anonymous"></script>
+
     <footer>
       <div class="footer-icons">
           <div>

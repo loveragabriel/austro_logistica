@@ -356,14 +356,14 @@ footer {
 }
 
 /* Service Page style */
-.services-main, .contact-main{
+.services-main, .contact-main, .log-in-main{
     justify-items: center;
     background-color: #1973b8;
     opacity: 0.9;
     object-fit: cover;
 }
 
-.title-service, .title-contact {
+.title-service, .title-contact, .title-logIn {
     padding-top: 2.5em;
     font-weight: 800;
     text-align: center;
@@ -524,6 +524,58 @@ label {
     padding: 10px;
 }
 
+/* Log In Page  */
+
+.log-in-section{
+    background-color: var(--info-color);
+    margin: 25px;
+    opacity: 0.8;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+}
+
+.tooltip {
+    position: relative;
+    border-bottom: 1px dotted black;
+    color:  var(--orange);
+    font-weight: 750;
+    padding: 10px;
+    text-align: right;
+  }
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+}
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+  }
+
+.log-in-img{
+    object-fit: cover;
+    position: relative;
+    height: 90vh;
+    width: 57vw;
+}
+
+.form-log-in{
+    background-color: #106D86;
+    margin: 0px 20px 0px;
+}
+
+#log-in-form{
+    font-size: 1.3em;
+}
+
 
 /* Term page style */
 
@@ -553,10 +605,6 @@ main {
     background-color: rgb(202, 214, 218);
 }
 
-/* .collapse,
-.navbar {
-    display: none;
-} */
 
 .form-page {
     background-color: rgb(202, 214, 218);
