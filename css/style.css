@@ -643,6 +643,7 @@ label {
     padding: 0.5em;
     justify-content: flex-end!important; 
     font-size: 1.5em;
+    cursor: pointer;;
 }
 
 
